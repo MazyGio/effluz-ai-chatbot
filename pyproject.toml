@@ -1,0 +1,21 @@
+[project]
+name = "effluzchatbot"
+version = "0.0.1"
+authors = [
+    { name = "Giovanni Effio", email = "giovannieffio@gmail.com" },
+]
+description = "Chatbot for managing new client orders."
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "pydantic>=2.10",
+    "langchain-core>=0.3",
+]
+
+[build-system]
+requires = ["flit_core>=3.2"]
+build-backend = "flit_core.buildapi"
+
+[tool.pylance]
+exclude = [".venv", ".vscode", "docs"]
